@@ -1,94 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8" />
     <meta name="robots" content="noindex, nofollow" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-
-    <title>Pawan.Krd - Our website is currently under maintenance</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Under Maintenance - Pawan.Krd</title>
     <style>
-      body {
-        background-color: #f7f8fa;
-        color: #333;
-        font-family: "Roboto", sans-serif;
-        font-size: 16px;
-        line-height: 1.6;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-      }
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-      .container {
-        max-width: 600px;
-        text-align: center;
-        padding: 20px;
-      }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-      h1 {
-        color: #000; /* Professional black */
-        margin-bottom: 24px;
-      }
+        body {
+            font-family: 'Space Mono', 'IBM Plex Sans Arabic', monospace;
+            background: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            color: #1a1a1a;
+        }
 
-      h4 {
-        color: #444; /* Slightly lighter shade for subheadings */
-        font-weight: 400;
-        margin: 16px 0;
-      }
+        .main-content {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
 
-      p {
-        color: #555; /* Soft black for paragraph text */
-        margin: 10px 0;
-      }
+        .container {
+            max-width: 700px;
+            width: 100%;
+        }
 
-      a {
-        color: #000; /* Black for links */
-        text-decoration: none;
-      }
+        h1 {
+            font-size: 32px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 16px;
+            line-height: 1.2;
+        }
 
-      a:hover {
-        text-decoration: none; /* Removes underline on hover */
-      }
+        .description {
+            font-size: 16px;
+            color: #666666;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
 
-      small {
-        font-size: 14px;
-        color: #666; /* Lighter shade for less prominent text */
-      }
+        .error-details {
+            background: #f8f8f8;
+            border-left: 3px solid #1a1a1a;
+            padding: 24px;
+            margin: 32px 0;
+            font-size: 14px;
+            color: #4a4a4a;
+            line-height: 1.6;
+        }
+
+        .info-section {
+            background: #f8f8f8;
+            border-left: 3px solid #1a1a1a;
+            padding: 24px;
+            margin: 32px 0;
+        }
+
+        .info-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: #1a1a1a;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 16px;
+        }
+
+        .info-item {
+            margin: 12px 0;
+            font-size: 15px;
+            color: #4a4a4a;
+            line-height: 1.6;
+        }
+
+        .info-item strong {
+            color: #1a1a1a;
+            font-weight: 500;
+            display: inline-block;
+            min-width: 80px;
+        }
+
+        a {
+            color: #1a1a1a;
+            text-decoration: underline;
+            font-weight: 500;
+            transition: opacity 0.2s ease;
+        }
+
+        a:hover {
+            opacity: 0.7;
+        }
+
+        .divider {
+            height: 1px;
+            background: #e5e5e5;
+            margin: 32px 0;
+        }
+
+        .footer {
+            background: #fafafa;
+            border-top: 1px solid #e5e5e5;
+            padding: 32px 40px;
+        }
+
+        .footer-content {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .footer-item {
+            font-size: 13px;
+            color: #666666;
+            line-height: 1.8;
+            margin: 6px 0;
+        }
+
+        .footer-item strong {
+            color: #1a1a1a;
+            font-weight: 500;
+        }
+
+        .ray-id {
+            display: inline-block;
+            background: #e5e5e5;
+            padding: 4px 10px;
+            font-size: 12px;
+            color: #4a4a4a;
+            vertical-align: middle;
+        }
+
+        .ray-id.ip-toggle {
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .ray-id.ip-toggle:hover {
+            opacity: 0.85;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                padding: 32px 24px;
+            }
+
+            h1 {
+                font-size: 26px;
+            }
+
+            .description {
+                font-size: 15px;
+            }
+
+            .info-section,
+            .error-details {
+                padding: 20px;
+            }
+
+            .footer {
+                padding: 24px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .main-content {
+                padding: 24px 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .description {
+                font-size: 14px;
+            }
+
+            .info-section,
+            .error-details {
+                padding: 16px;
+            }
+
+            .info-item {
+                font-size: 14px;
+            }
+
+            .info-item strong {
+                display: block;
+                margin-bottom: 4px;
+            }
+
+            .footer {
+                padding: 20px;
+            }
+
+            .footer-item {
+                font-size: 12px;
+            }
+        }
     </style>
-  </head>
+</head>
+<body>
+    <div class="main-content">
+        <div class="container">
+            <h1>We'll Be Right Back</h1>
+            <p class="description">
+                We're currently performing some maintenance to improve our services. We'll be back online shortly. Thank you for your patience!
+            </p>
 
-  <body>
-    <div class="container">
-      <h1>Pawan.Krd</h1>
-      <h4>
-        Our website is currently under maintenance to bring you new and exciting
-        updates.
-      </h4>
-      <h4>Thank you for your patience!</h4>
-      <p>You are unable to access this website right now.</p>
-      <p>
-        Feel free to contact us at
-        <a href="mailto:contact@pawan.krd">contact@pawan.krd</a>.
-      </p>
-      <p>
-        Join our Discord community:
-        <a href="https://discord.gg/pawan">https://discord.gg/pawan</a>.
-      </p>
-      <p>
-        <small><strong>Ray ID:</strong> ::RAY_ID::</small>
-      </p>
-      <p>
-        <small><strong>PKRD, LLC</strong> 1207 Delaware Ave #3553, Wilmington Delaware 19806</small></br><small><strong>Phone:</strong> +1 302 924 8487</small>
-      </p>
+            <div class="error-details">::CLOUDFLARE_ERROR_500S_BOX::</div>
+
+            <div class="divider"></div>
+
+            <div class="info-section">
+                <div class="info-title">Contact Information</div>
+                <div class="info-item">
+                    <strong>Email:</strong> <a href="mailto:contact@pawan.krd">contact@pawan.krd</a>
+                </div>
+                <div class="info-item">
+                    <strong>Discord:</strong> <a href="https://discord.gg/pawan" target="_blank">discord.gg/pawan</a>
+                </div>
+            </div>
+        </div>
     </div>
-  </body>
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-item"><strong>Ray ID:</strong> <span class="ray-id">::RAY_ID::</span></div>
+            <div class="footer-item"><strong>Client IP:</strong> <span class="ray-id ip-toggle" onclick="this.classList.remove('ip-toggle');this.removeAttribute('onclick');this.textContent='::CLIENT_IP::'">Click to reveal</span></div>
+            <div class="divider"></div>
+            <div class="footer-item"><strong>PKRD, LLC</strong></div>
+            <div class="footer-item">1207 Delaware Ave #3553, Wilmington Delaware 19806</div>
+            <div class="footer-item"><strong>Phone:</strong> +1 302 924 8487</div>
+        </div>
+    </div>
+</body>
 </html>
